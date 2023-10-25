@@ -25,7 +25,7 @@ class CreatePurchasesTable extends Migration
             $table->integer('TotalPrice');
             $table->foreign('SupplierID')->references('id')->on('suppliers')->onDelete('cascade');
             $table->foreign('CategoryID')->references('id')->on('categories')->onDelete('cascade');
-            $table->foreign('ProductID')->references('id')->on('products');
+            $table->foreign('ProductID')->references('id')->on('products'); 
 
             $table->timestamps();
         });
