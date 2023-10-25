@@ -25,7 +25,7 @@ class CreateInvoicesTable extends Migration
             $table->integer('Amount');
             $table->foreign('CustomerID')->references('id')->on('customers')->onDelete('cascade');
             $table->foreign('CategoryID')->references('id')->on('categories')->onDelete('cascade');
-            $table->foreign('ProductID')->references('id')->on('products')->onDelete('cascade');
+            $table->foreign('ProductID')->references('id')->on('products');
 
             $table->timestamps();
         });
