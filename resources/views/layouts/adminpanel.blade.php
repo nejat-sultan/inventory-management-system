@@ -282,7 +282,7 @@
                     </div>
                 </div>
                 
-                <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+                <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
        
     </div>
