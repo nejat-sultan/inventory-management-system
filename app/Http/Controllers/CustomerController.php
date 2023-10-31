@@ -46,7 +46,7 @@ class CustomerController extends Controller
         $input = $request->all();
         Customer::create($input);
 
-        session()->flash('message', 'Category Added Successfully!');
+        session()->flash('message', 'Customer Added Successfully!');
         return redirect('customer');
     }
 
